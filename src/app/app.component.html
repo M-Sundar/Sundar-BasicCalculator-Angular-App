@@ -1,0 +1,21 @@
+<div class="container">
+<div class="calculator">
+    <div class="fields">
+        <input type="text" [(ngModel)]="field1" />
+        <select [(ngModel)]="operation">
+            <option value="+">Add</option>
+            <option value="-">Sub</option>
+            <option value="*">Mul</option>
+            <option value="/">Div</option>
+        </select>
+        <input [(ngModel)]="field2" />
+        <button type="button" (click)="calculate()">Calculate</button>
+    </div>
+</div>
+<div class="total">
+    <p>field1 : {{field1}}</p>
+    <p>operation : {{operation}}</p>
+    <p>field2 : {{field2}}</p>   
+    <p>total : {{total}}</p> 
+</div>
+</div>
